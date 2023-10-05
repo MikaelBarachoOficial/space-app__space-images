@@ -1,23 +1,24 @@
-import './App.css'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import styled from "styled-components"
+import GlobalStyles from "./components/GlobalStyles"
+import Header from "./components/Header"
+import AsideMenu from "./components/AsideMenu"
 
 function App() {
 
+  const GradientBackground = styled.div`
+    background: var(--Gradiente-fundo, linear-gradient(175deg, #041833 4.16%, #04244F 48%, #154580 96.76%));
+    width: 100%;
+    height: 100vh;
+  `
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Space App v1</h1>
+    <GradientBackground>
+      <GlobalStyles />
 
-    </>
+      <Header />
+      <AsideMenu />
+
+    </GradientBackground>
   )
 }
 
