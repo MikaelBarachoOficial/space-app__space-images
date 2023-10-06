@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
-const Header = () => {
-
-    const StyledHeader = styled.header`
+const StyledHeader = styled.header`
         padding: 3em 2em;
         display: flex;
         justify-content: space-between;
@@ -35,6 +33,7 @@ const Header = () => {
         border: red solid 1px;
     `
 
+const Header = () => {
     return (
         <StyledHeader>
             <img src="/public/images/logo.png" alt="logo" />
