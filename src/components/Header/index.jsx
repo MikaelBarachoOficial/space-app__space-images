@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-        padding: 3em 2em;
+        padding: 3em 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
             height: 56px;
             border-radius: 10px;
             border: 2px solid #C98CF1;
-            background: url(/public/icons/search.svg) no-repeat 97% center;
+            background: url(/icons/search.svg) no-repeat 97% center;
             padding-left: 2em;
             color: #fff;
             
@@ -28,15 +28,17 @@ const StyledHeader = styled.header`
 
         input::placeholder {
              color: #D9D9D9;
+             font-size: 1.25rem;
+             font-family: 'GandhiSansRegular';
         }
 
-        border: red solid 1px;
+
     `
 
 const Header = () => {
     return (
         <StyledHeader>
-            <img src="/public/images/logo.png" alt="logo" />
+            <img src="/images/logo.png" alt="logo" />
             <input type="text" placeholder="What are you searching for?" />
         </StyledHeader>
     )

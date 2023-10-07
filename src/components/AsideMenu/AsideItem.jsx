@@ -8,6 +8,7 @@ const StyledAsideItem = styled.li`
             cursor: pointer;
 
             width: 212px;
+            padding: 0;
             
             display: flex;
             align-items: center;
@@ -19,9 +20,10 @@ const StyledAsideItem = styled.li`
         }
 
         button p {
-            ${props => props.$activated ? 'color: #7B78E5; font-weight: 700;' : 'color: #D9D9D9; font-weight: 400;'}
+            font-family: ${props => props.$activated ? 'GandhiSansBold' : 'GandhiSansRegular'};
+            color: ${props => props.$activated ? '#7B78E5' : '#D9D9D9'};
             font-size: 1.5rem;
-          
+            margin: 0;
 
         }
     `
