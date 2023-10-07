@@ -5,6 +5,7 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 2em;
 
         img {
             max-width: 212px;
@@ -17,8 +18,10 @@ const StyledHeader = styled.header`
             border: 2px solid #C98CF1;
             background: url(/icons/search.svg) no-repeat 97% center;
             padding-left: 2em;
-            color: #fff;
             
+            color: #fff;
+            font-size: 1.25rem;
+            font-family: 'GandhiSansRegular';
         }
 
         input:focus {
@@ -27,7 +30,7 @@ const StyledHeader = styled.header`
         }
 
         input::placeholder {
-             color: #D9D9D9;
+             color: #d9d9d9bc;
              font-size: 1.25rem;
              font-family: 'GandhiSansRegular';
         }
